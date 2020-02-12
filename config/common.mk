@@ -258,7 +258,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/xtended/overlay/common
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    Launcher3QuickStep
 
 -include vendor/xtended/config/version.mk
 -include vendor/xtended/config/partner_gms.mk
