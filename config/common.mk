@@ -158,6 +158,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     OmniJaws \
     OmniStyle \
+    ShadyQuickStep \
     StitchImage
 
 # Cutout control overlays
