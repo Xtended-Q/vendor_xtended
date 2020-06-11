@@ -122,6 +122,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/xtended-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/xtended-power-whitelist.xml
 
+# Live Display
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
+
 # Include AOSP audio files
 include vendor/xtended/config/aosp_audio.mk
 
