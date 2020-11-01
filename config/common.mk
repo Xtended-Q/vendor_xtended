@@ -30,7 +30,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1 \
     persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0 
+    persist.sys.wfd.virtual=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
@@ -190,6 +190,10 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
+
+# Launcher overlay
+PRODUCT_PACKAGES += \
+    ShadyQuickStepAppLockOverlay
 
 # Offline charger
 PRODUCT_PACKAGES += \
