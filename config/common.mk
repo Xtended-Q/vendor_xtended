@@ -148,7 +148,7 @@ include vendor/xtended/config/version.mk
 # Google apps and services
 ifeq ($(WITH_GAPPS),true)
 
-$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+$(call inherit-product, vendor/google/common/common-vendor.mk)
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -192,12 +192,6 @@ PRODUCT_PACKAGES += \
     SoftAPManager \
     OmniJaws \
     GamingMode
-
-ifneq ($(FULL_GAPPS),true)
-PRODUCT_PACKAGES += \
-    ThemePicker \
-    XtendedThemesStub
-endif
 
 # Config
 PRODUCT_PACKAGES += \
